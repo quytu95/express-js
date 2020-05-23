@@ -1,0 +1,15 @@
+h1 Todos
+
+form(action="/todos/create", method="POST")
+    input(name="name", type="text")
+
+    button Create
+
+form(action="/todos/search", method="GET")
+  input(type="text", name="q")
+  button Search
+
+ul 
+  each todo in todos
+    li= todo
+    
